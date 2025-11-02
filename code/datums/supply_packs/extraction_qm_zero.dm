@@ -74,18 +74,10 @@
 /datum/supply_packs/qm_m39_mag_ext
 	name = "Ammunition: Viper-9 Magazine, Extended"
 	contains = list(/obj/item/ammo_magazine/smg/m39/extended)
-	cost = 5
+	cost = 3
 	containertype = /obj/structure/closet/crate/ammo
 	containername = "\improper Viper-9 extended magazine crate"
 	group = "Quartermaster LL1"
-
-/datum/supply_packs/qm_loose_9mm
-	name = "Ammunition: Loose 9mm Rounds, Bulk"
-	contains = list(/obj/item/ammo_box/rounds/pistol)
-	cost = 40
-	containertype = /obj/structure/closet/crate/ammo
-	containername = "\improper bulk 9mm ammo crate"
-	group = "Quartermaster LL0"
 
 /datum/supply_packs/qm_hedp
 	name = "Weapon: M40 HEDP Grenade"
@@ -128,102 +120,150 @@
 	containername = "\improper M3 armor crate"
 	group = "Quartermaster LL0"
 
+/datum/supply_packs/qm_mpauldrons
+	name = "Armor: M3 Pattern Pauldrons"
+	contains = list(/obj/item/clothing/accessory/pads)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 pauldrons crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mbracers
+	name = "Armor: M3 Pattern Vambraces"
+	contains = list(/obj/item/clothing/accessory/pads/bracers)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 vambraces crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mgreaves
+	name = "Armor: M3 Pattern Greaves"
+	contains = list(/obj/item/clothing/accessory/pads/greaves)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 greaves crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mkneepads
+	name = "Armor: M3 Pattern Kneepads"
+	contains = list(/obj/item/clothing/accessory/pads/kneepads)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 kneepads crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mneckguard
+	name = "Armor: M3 Pattern Gorget"
+	contains = list(/obj/item/clothing/accessory/pads/neckguard)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 gorget crate"
+	group = "Quartermaster LL0"
+
+/datum/supply_packs/qm_mgroin
+	name = "Armor: M3 Pattern Groinplate"
+	contains = list(/obj/item/clothing/accessory/pads/groin)
+	cost = 10
+	containertype = /obj/structure/closet/crate/secure/gear
+	containername = "\improper M3 groinplate crate"
+	group = "Quartermaster LL0"
+
 // meds
-/datum/supply_packs/qm_gauze
-	name = "Medicine: Gauze"
-	contains = list(/obj/item/stack/medical/bruise_pack)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper gauze crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_gauze
+//	name = "Medicine: Gauze"
+//	contains = list(/obj/item/stack/medical/bruise_pack)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper gauze crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_ointment
-	name = "Medicine: Burn Ointment"
-	contains = list(/obj/item/stack/medical/ointment)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper ointment crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_ointment
+//	name = "Medicine: Burn Ointment"
+//	contains = list(/obj/item/stack/medical/ointment)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper ointment crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_splints
-	name = "Medicine: Splints"
-	contains = list(/obj/item/stack/medical/splint)
-	cost = 10
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper splint crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_splints
+//	name = "Medicine: Splints"
+//	contains = list(/obj/item/stack/medical/splint)
+//	cost = 10
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper splint crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_brutepills
-	name = "Medicine: Brute Pills"
-	contains = list(/obj/item/storage/pill_bottle/packet/bicaridine)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper brute pill crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_brutepills
+//	name = "Medicine: Brute Pills"
+//	contains = list(/obj/item/storage/pill_bottle/packet/bicaridine)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper brute pill crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_brutepen
-	name = "Medicine: Brute Autoinjector"
-	contains = list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/skillless)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper brute pen crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_brutepen
+//	name = "Medicine: Brute Autoinjector"
+//	contains = list(/obj/item/reagent_container/hypospray/autoinjector/bicaridine/skillless)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper brute pen crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_burnpills
-	name = "Medicine: Burn Pills"
-	contains = list(/obj/item/storage/pill_bottle/packet/kelotane)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper burn pill crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_burnpills
+//	name = "Medicine: Burn Pills"
+//	contains = list(/obj/item/storage/pill_bottle/packet/kelotane)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper burn pill crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_burnpen
-	name = "Medicine: Burn Autoinjector"
-	contains = list(/obj/item/reagent_container/hypospray/autoinjector/kelotane/skillless)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper burn pen crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_burnpen
+//	name = "Medicine: Burn Autoinjector"
+//	contains = list(/obj/item/reagent_container/hypospray/autoinjector/kelotane/skillless)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper burn pen crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_painpills
-	name = "Medicine: Painkiller Pills"
-	contains = list(/obj/item/storage/pill_bottle/packet/tramadol)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper painkiller pill crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_painpills
+//	name = "Medicine: Painkiller Pills"
+//	contains = list(/obj/item/storage/pill_bottle/packet/tramadol)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper painkiller pill crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_brutepen
-	name = "Medicine: Painkiller Autoinjector"
-	contains = list(/obj/item/reagent_container/hypospray/autoinjector/tramadol/skillless)
-	cost = 5
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper painkiller pen crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_painpen
+//	name = "Medicine: Painkiller Autoinjector"
+//	contains = list(/obj/item/reagent_container/hypospray/autoinjector/tramadol/skillless)
+//	cost = 5
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper painkiller pen crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_healthanalyzer_old
-	name = "Medicine: HF-2 Health Analyzer"
-	contains = list(/obj/item/device/healthanalyzer)
-	cost = 10
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper HF-2 analyzer crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_healthanalyzer_old
+//	name = "Medicine: HF-2 Health Analyzer"
+//	contains = list(/obj/item/device/healthanalyzer)
+//	cost = 10
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper HF-2 analyzer crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_healthanalyzer
-	name = "Medicine: Health Diagnostic Equipment"
-	contains = list(/obj/item/device/healthanalyzer/soul)
-	cost = 10
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper health diagnostic kit crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_healthanalyzer
+//	name = "Medicine: Health Diagnostic Equipment"
+//	contains = list(/obj/item/device/healthanalyzer/soul)
+//	cost = 10
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper health diagnostic kit crate"
+//	group = "Quartermaster LL0"
 
-/datum/supply_packs/qm_healthhud
-	name = "Medicine: HealthMate HUD"
-	contains = list(/obj/item/clothing/glasses/hud/health)
-	cost = 30
-	containertype = /obj/structure/closet/crate/medical
-	containername = "\improper HealthMate crate"
-	group = "Quartermaster LL0"
+///datum/supply_packs/qm_healthhud
+//	name = "Medicine: HealthMate HUD"
+//	contains = list(/obj/item/clothing/glasses/hud/health)
+//	cost = 30
+//	containertype = /obj/structure/closet/crate/medical
+//	containername = "\improper HealthMate crate"
+//	group = "Quartermaster LL0"
 
 // tools
 /datum/supply_packs/qm_toolbox
