@@ -859,6 +859,8 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	item_state = "io"
 	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 	flags_atom = NO_NAME_OVERRIDE
 	max_inserted_visors = 2
 
@@ -1247,6 +1249,20 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	clothing_traits = null
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
 	specialty = "6B68 helmet"
+
+/obj/item/clothing/head/helmet/marine/veteran/fil
+	name = "\improper Burgonet-Ri"
+	desc = "Modeled after the burgonet pattern helmet, the new standard French armed forces helmet provides improved shrapnel protection with a splinter-proof aventail. An imported heads up display unit is integrated for battlefield awareness, and a low-profile high gain antenna complex is mounted along the top of the head. Shock impact protection is provided by gel padding which also serve to maintain comfort."
+	icon_state = "fil"
+	flags_inventory = NO_FLAGS
+	flags_inv_hide = NO_FLAGS
+	flags_marine_helmet = NO_FLAGS
+
+/obj/item/clothing/head/helmet/marine/veteran/fil/fire
+	name = "\improper Burgonet-Ri Incinerator Variant"
+	icon_state = "fil_fire"
+	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROT
 
 //==========================//UPP\\=================================\\
 //=======================================================================\\
@@ -1792,7 +1808,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
 
-/obj/item/clothing/head/helmet/marine/veteran/mercenary
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/upgraded
 	name = "\improper Modified K12 ceramic helmet"
 	desc = "A sturdy helmet worn by an unknown mercenary group. Reinforced with extra plating."
 	armor_melee = CLOTHING_ARMOR_ULTRAHIGH
@@ -1995,3 +2011,41 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	)
 	item_state = "rmc_helm2"
 	desc = "A common helmet used by various blue-collar professions in the TWE."
+
+// =SCAVS & MARAUDERS= \\
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder
+	name = "\improper K6 ceramic helmet"
+	desc = "An early model of the highly sought-after K12 helmet, usually favored by mercenaries or pirates on a budget. While not nearly as protective as the modern version, it still deflects bullets easily enough."
+	icon_state = "mercenary_heavy_helmet"
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_VERYLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_LOW
+	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	flags_marine_helmet = HELMET_DAMAGE_OVERLAY
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder/miner
+	name = "\improper Y4 miner helmet"
+	desc = "An early model of the Y8 mining helmet. Much like the modern version, the Y4 helmet sees more use by mercenaries and pirates rather than being used in actual mining operations -- this is primarily due to its sturdiness, while still being technically legal for a civilian to own. While not nearly as protective as the Y8 variant, it still deflects bullets easily enough."
+	icon_state = "mercenary_miner_helmet"
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/veteran/mercenary/marauder/support
+	name = "\improper Z3 helmet"
+	desc = "An early model of the highly sought-after Z7 support helmet, usually favored by mercenaries or pirates tasked with more technical work. While not nearly as protective as the modern version, it still deflects bullets easily enough."
+	icon_state = "mercenary_engineer_helmet"
+	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_VERYLOW
+	armor_internaldamage = CLOTHING_ARMOR_NONE
